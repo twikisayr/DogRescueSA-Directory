@@ -37,14 +37,8 @@
     .logo span { font-size: 1.4rem; }
 
     nav { display: flex; align-items: center; gap: 24px; }
-    nav a, nav .drop-trigger { color: #5a5a5a; text-decoration: none; font-size: 0.95rem; font-weight: 500; padding: 8px 0; cursor: pointer; border: none; background: none; font-family: inherit; }
-    nav a:hover, nav .drop-trigger:hover { color: #1f4ea3; }
-
-    .dropdown { position: relative; }
-    .dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #e5e0d9; border-radius: 8px; min-width: 180px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); padding: 8px 0; z-index: 200; }
-    .dropdown:hover .dropdown-content { display: block; }
-    .dropdown-content a { display: block; padding: 8px 20px; color: #5a5a5a; font-size: 0.9rem; font-weight: 400; }
-    .dropdown-content a:hover { background: #f0f4fa; color: #1f4ea3; }
+    nav a { color: #5a5a5a; text-decoration: none; font-size: 0.95rem; font-weight: 500; padding: 8px 0; }
+    nav a:hover { color: #1f4ea3; }
 
     .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; z-index: 300; }
     .hamburger span { display: block; width: 24px; height: 2px; background: #3c3c3b; border-radius: 2px; transition: all 0.2s; }
@@ -54,9 +48,6 @@
     .nav-overlay a { color: #e2e8f0; font-size: 1.3rem; font-weight: 600; text-decoration: none; }
     .nav-overlay a:hover { color: #fff; }
     .nav-overlay .close-btn { position: absolute; top: 16px; right: 20px; background: none; border: none; color: #e2e8f0; font-size: 2rem; cursor: pointer; line-height: 1; }
-    .nav-overlay .drop-section { display: flex; flex-direction: column; align-items: center; gap: 12px; }
-    .nav-overlay .drop-section .drop-label { color: #94a3b8; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
-    .nav-overlay .drop-section a { font-size: 1.05rem; font-weight: 400; }
 
     .hero { background: linear-gradient(135deg, #1f4ea3 0%, #2563eb 50%, #3b82f6 100%); color: #fff; text-align: center; padding: 72px 20px 56px; }
     .hero h1 { font-size: 2.2rem; font-weight: 800; max-width: 680px; margin: 0 auto 12px; line-height: 1.25; }
@@ -115,14 +106,7 @@
     <a href="/" class="logo"><span>🐾</span> Dog Rescue SA</a>
     <nav>
       <a href="/rehome-a-dog/">Rehome a Dog</a>
-      <div class="dropdown">
-        <a href="/find-a-rescue/" class="drop-trigger">Find a Rescue ▾</a>
-        <div class="dropdown-content">
-          <a href="/find-a-rescue/gauteng/">Gauteng</a>
-          <a href="/find-a-rescue/western-cape/">Western Cape</a>
-          <a href="/find-a-rescue/kwazulu-natal/">KwaZulu-Natal</a>
-        </div>
-      </div>
+      <a href="/find-a-rescue/">Find a Rescue</a>
       <a href="/breeds/">Breeds</a>
       <a href="/about/">About</a>
       <a href="/lost/">Lost a Dog?</a>
@@ -137,12 +121,6 @@
   <button class="close-btn" onclick="document.getElementById('navOverlay').classList.remove('open')" aria-label="Close menu">&times;</button>
   <a href="/rehome-a-dog/" onclick="document.getElementById('navOverlay').classList.remove('open')">Rehome a Dog</a>
   <a href="/find-a-rescue/" onclick="document.getElementById('navOverlay').classList.remove('open')">Find a Rescue</a>
-  <div class="drop-section">
-    <span class="drop-label">Provinces</span>
-    <a href="/find-a-rescue/gauteng/">Gauteng</a>
-    <a href="/find-a-rescue/western-cape/">Western Cape</a>
-    <a href="/find-a-rescue/kwazulu-natal/">KwaZulu-Natal</a>
-  </div>
   <a href="/breeds/" onclick="document.getElementById('navOverlay').classList.remove('open')">Breeds</a>
   <a href="/about/" onclick="document.getElementById('navOverlay').classList.remove('open')">About</a>
   <a href="/lost/" onclick="document.getElementById('navOverlay').classList.remove('open')">Lost a Dog?</a>
@@ -220,17 +198,6 @@
       <span class="card-link">See Maltese</span>
     </a>
   </div>
-</section>
-
-<section>
-  <h2>Find rescues near you</h2>
-  <p class="section-sub">Browse by province to find rescue organisations that operate in your area.</p>
-  <div class="link-grid">
-    <a href="/find-a-rescue/gauteng/">Gauteng</a>
-    <a href="/find-a-rescue/western-cape/">Western Cape</a>
-    <a href="/find-a-rescue/kwazulu-natal/">KwaZulu-Natal</a>
-  </div>
-  <p style="text-align:center;margin-top:16px;font-size:0.9rem;color:#9ca3af;">More provinces coming as we confirm partner coverage in each region.</p>
 </section>
 
 <footer>
