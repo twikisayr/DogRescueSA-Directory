@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find a Rescue Dog in South Africa — Trusted Rescue Partners</title>
+  <meta name="description" content="Looking to adopt? Find rescue dogs through trusted South African rescue organisations. Browse by breed to see who has dogs ready for new homes.">
+  <link rel="canonical" href="https://dogrescuesa.co.za/find-a-rescue/">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { font-size: 16px; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f9f7f4; color: #3c3c3b; line-height: 1.6; }
+    header { background: #fff; border-bottom: 1px solid #e5e0d9; position: sticky; top: 0; z-index: 100; }
+    .header-inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .logo { font-size: 1.2rem; font-weight: 700; color: #1f4ea3; text-decoration: none; display: flex; align-items: center; gap: 6px; }
+    .logo span { font-size: 1.4rem; }
+    nav { display: flex; align-items: center; gap: 24px; }
+    nav a { color: #5a5a5a; text-decoration: none; font-size: 0.95rem; font-weight: 500; padding: 8px 0; }
+    nav a:hover, nav a.active { color: #1f4ea3; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; z-index: 300; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: #3c3c3b; border-radius: 2px; }
+    .nav-overlay { display: none; position: fixed; inset: 0; background: #0f172a; z-index: 250; flex-direction: column; align-items: center; justify-content: center; gap: 28px; }
+    .nav-overlay.open { display: flex; }
+    .nav-overlay a { color: #e2e8f0; font-size: 1.3rem; font-weight: 600; text-decoration: none; }
+    .nav-overlay .close-btn { position: absolute; top: 16px; right: 20px; background: none; border: none; color: #e2e8f0; font-size: 2rem; cursor: pointer; }
+
+    section { max-width: 860px; margin: 0 auto; padding: 48px 20px 40px; }
+    section h1 { font-size: 1.8rem; font-weight: 700; color: #1f4ea3; margin-bottom: 8px; }
+    section .intro { font-size: 1.05rem; color: #6b7280; margin-bottom: 32px; line-height: 1.6; }
+    section h2 { font-size: 1.3rem; font-weight: 700; color: #3c3c3b; margin: 32px 0 16px; }
+
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+    .card { background: #fff; border: 1px solid #e5e0d9; border-radius: 12px; padding: 28px 24px; text-align: center; text-decoration: none; color: inherit; display: block; transition: box-shadow 0.15s; }
+    .card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.07); }
+    .card-icon { font-size: 2.2rem; margin-bottom: 12px; }
+    .card h3 { font-size: 1.1rem; font-weight: 700; color: #1f4ea3; margin-bottom: 8px; }
+    .card p { font-size: 0.9rem; color: #6b7280; line-height: 1.5; margin-bottom: 16px; }
+    .card .btn { display: inline-block; padding: 10px 22px; background: #1f4ea3; color: #fff; border-radius: 6px; font-weight: 600; font-size: 0.9rem; text-decoration: none; }
+
+    .info-block { background: #fff; border: 1px solid #e5e0d9; border-radius: 10px; padding: 24px; margin: 24px 0; }
+    .info-block p { color: #5a5a5a; font-size: 0.95rem; line-height: 1.6; margin-bottom: 8px; }
+    .info-block p:last-child { margin-bottom: 0; }
+
+    footer { background: #fff; border-top: 1px solid #e5e0d9; padding: 40px 20px 24px; text-align: center; }
+    footer p { color: #6b7280; font-size: 0.9rem; max-width: 560px; margin: 0 auto 8px; }
+    footer .copyright { font-size: 0.82rem; color: #9ca3af; margin-top: 16px; }
+    @media (max-width: 768px) {
+      nav { display: none; }
+      .hamburger { display: flex; }
+      section { padding: 32px 16px 40px; }
+      section h1 { font-size: 1.5rem; }
+      .card-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo"><span>🐾</span> Dog Rescue SA</a>
+    <nav>
+      <a href="/rehome-a-dog/">Rehome a Dog</a>
+      <a href="/find-a-rescue/" class="active">Find a Rescue</a>
+      <a href="/breeds/">Breeds</a>
+      <a href="/about/">About</a>
+      <a href="/lost/">Lost a Dog?</a>
+    </nav>
+    <button class="hamburger" onclick="document.getElementById('navOverlay').classList.add('open')"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="nav-overlay" id="navOverlay">
+  <button class="close-btn" onclick="document.getElementById('navOverlay').classList.remove('open')">&times;</button>
+  <a href="/rehome-a-dog/">Rehome a Dog</a><a href="/find-a-rescue/">Find a Rescue</a><a href="/breeds/">Breeds</a><a href="/about/">About</a><a href="/lost/">Lost a Dog?</a>
+</div>
+
+<section>
+  <h1>Find a Rescue Dog in South Africa</h1>
+  <p class="intro">Dog Rescue SA is a guidance platform — we don't house dogs or process adoptions ourselves. Instead, we connect you with trusted rescue organisations that do. Visit them directly to see who's available.</p>
+
+  <div class="info-block">
+    <p><strong>How it works:</strong> Each rescue below operates independently. They handle their own adoption processes — applications, home checks, and matching dogs to the right homes. Dog Rescue SA doesn't manage or influence their decisions. We simply point you in the right direction.</p>
+  </div>
+
+  <h2>Rescue organisations by breed</h2>
+  <div class="card-grid">
+    <a href="https://www.yorkierescue.co.za/" class="card">
+      <div class="card-icon">🐶</div>
+      <h3>SA Yorkie Rescue</h3>
+      <p>Yorkshire Terriers and Yorkie crosses available for adoption across South Africa. Province-specific listings updated regularly.</p>
+      <span class="btn">See Yorkies →</span>
+    </a>
+    <a href="https://littledoggyrescue.co.za/" class="card">
+      <div class="card-icon">🐕</div>
+      <h3>Little Doggy Rescue</h3>
+      <p>Small breed dogs — Jack Russells, Chihuahuas, Dachshunds, and other small dogs across SA.</p>
+      <span class="btn">See small dogs →</span>
+    </a>
+    <a href="https://frenchbulldogrescue.co.za/" class="card">
+      <div class="card-icon">🦴</div>
+      <h3>French Bulldog Rescue SA</h3>
+      <p>French Bulldogs available for adoption. Also offers surrender guidance for Frenchie owners.</p>
+      <span class="btn">See Frenchies →</span>
+    </a>
+    <a href="https://www.malteserescue.co.za/" class="card">
+      <div class="card-icon">🐩</div>
+      <h3>Maltese Rescue SA</h3>
+      <p>Maltese and Maltese crosses available for adoption. Rehoming support for Maltese owners.</p>
+      <span class="btn">See Maltese →</span>
+    </a>
+  </div>
+
+  <h2>Lost or found a dog?</h2>
+  <div class="card-grid">
+    <a href="https://lostdogs.co.za/" class="card">
+      <div class="card-icon">🔍</div>
+      <h3>Lost Dogs SA</h3>
+      <p>If you've lost or found a dog, Lost Dogs SA has listings, recovery tips, and a community network across South Africa.</p>
+      <span class="btn">Visit Lost Dogs SA →</span>
+    </a>
+  </div>
+
+  <h2>Looking to rehome instead?</h2>
+  <p style="color:#5a5a5a;line-height:1.7;">If you need to find a new home for your dog — rather than adopt — visit our <a href="/rehome-a-dog/" style="color:#1f4ea3;font-weight:500;">rehoming hub</a>. Each of these rescues also offers private, judgement-free rehoming guidance for owners who need it.</p>
+</section>
+
+<footer>
+  <p>Dog Rescue SA is a guidance platform connecting people with trusted South African rescue organisations.</p>
+  <p class="copyright">&copy; 2026 Dog Rescue SA</p>
+</footer>
+<script>document.addEventListener('keydown',function(e){if(e.key==='Escape')document.getElementById('navOverlay').classList.remove('open');});</script>
+</body>
+</html>
