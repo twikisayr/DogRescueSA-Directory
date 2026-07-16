@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Find Trusted Dog Rescues in South Africa — Dog Rescue SA</title>
-  <meta name="description" content="Looking to adopt? Find rescue dogs through trusted South African rescue organisations. Browse by breed to see who has dogs ready for new homes.">
+  <meta name="description" content="Looking to adopt? Find South African rescue organisations by breed and visit them directly for current dogs, requirements, and applications.">
   <link rel="canonical" href="https://dogrescuesa.co.za/find-a-rescue/">
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -43,7 +43,7 @@
 
     footer { background: #fff; border-top: 1px solid #e5e0d9; padding: 40px 20px 24px; text-align: center; }
     footer p { color: #6b7280; font-size: 0.9rem; max-width: 560px; margin: 0 auto 8px; }
-    footer .copyright { font-size: 0.82rem; color: #9ca3af; margin-top: 16px; }
+    footer .copyright { font-size: 0.82rem; color: #6b7280; margin-top: 16px; }
     @media (max-width: 768px) {
       nav { display: none; }
       .hamburger { display: flex; }
@@ -64,20 +64,21 @@
       <a href="/about/">About</a>
       <a href="/lost/">Lost a Dog?</a>
     </nav>
-    <button class="hamburger" onclick="document.getElementById('navOverlay').classList.add('open')"><span></span><span></span><span></span></button>
+    <button class="hamburger" aria-label="Open menu" onclick="document.getElementById('navOverlay').classList.add('open')"><span></span><span></span><span></span></button>
   </div>
 </header>
 <div class="nav-overlay" id="navOverlay">
-  <button class="close-btn" onclick="document.getElementById('navOverlay').classList.remove('open')">&times;</button>
+  <button class="close-btn" aria-label="Close menu" onclick="document.getElementById('navOverlay').classList.remove('open')">&times;</button>
   <a href="/rehome-a-dog/">Rehome a Dog</a><a href="/find-a-rescue/">Find a Rescue</a><a href="/breeds/">Breeds</a><a href="/about/">About</a><a href="/lost/">Lost a Dog?</a>
 </div>
 
+<main>
 <section>
   <h1>Find Trusted Dog Rescues in South Africa</h1>
-  <p class="intro">Dog Rescue SA is a guidance platform — we don't house dogs or process adoptions ourselves. Instead, we connect you with trusted rescue organisations that do. Visit them directly to see who's available.</p>
+  <p class="intro">Dog Rescue SA is a guidance platform — we don't house dogs or process adoptions ourselves. We connect you with partner rescue organisations. Visit them directly for current availability, requirements, and applications.</p>
 
   <div class="info-block">
-    <p><strong>How it works:</strong> Each rescue below operates independently. They handle their own adoption processes — applications, home checks, and matching dogs to the right homes. Dog Rescue SA doesn't manage or influence their decisions. We simply point you in the right direction.</p>
+    <p><strong>How it works:</strong> Each rescue sets its own adoption process, requirements, service area, and decisions. Dog Rescue SA does not manage applications or guarantee that a particular dog, match, or placement is available.</p>
   </div>
 
   <h2>Rescue organisations by breed</h2>
@@ -85,25 +86,25 @@
     <a href="https://www.yorkierescue.co.za/" class="card">
       <div class="card-icon">🐶</div>
       <h3>SA Yorkie Rescue</h3>
-      <p>Yorkshire Terriers and Yorkie crosses available for adoption across South Africa. Province-specific listings updated regularly.</p>
+      <p>Visit SA Yorkie Rescue for current Yorkie and Yorkie-cross listings and adoption information.</p>
       <span class="btn">See Yorkies →</span>
     </a>
     <a href="https://littledoggyrescue.co.za/" class="card">
       <div class="card-icon">🐕</div>
       <h3>Little Doggy Rescue</h3>
-      <p>Small breed dogs — Jack Russells, Chihuahuas, Dachshunds, and other small dogs across SA.</p>
+      <p>Visit Little Doggy Rescue for current small-dog information and its adoption process.</p>
       <span class="btn">See small dogs →</span>
     </a>
     <a href="https://frenchbulldogrescue.co.za/" class="card">
       <div class="card-icon">🦴</div>
       <h3>French Bulldog Rescue SA</h3>
-      <p>French Bulldogs available for adoption. Also offers surrender guidance for Frenchie owners.</p>
+      <p>Visit French Bulldog Rescue SA for current adoption information and Frenchie surrender guidance.</p>
       <span class="btn">See Frenchies →</span>
     </a>
     <a href="https://www.malteserescue.co.za/" class="card">
       <div class="card-icon">🐩</div>
       <h3>Maltese Rescue SA</h3>
-      <p>Maltese and Maltese crosses available for adoption. Rehoming support for Maltese owners.</p>
+      <p>Visit Maltese Rescue SA for current Maltese adoption and rehoming information.</p>
       <span class="btn">See Maltese →</span>
     </a>
   </div>
@@ -119,8 +120,9 @@
   </div>
 
   <h2>Looking to rehome instead?</h2>
-  <p style="color:#5a5a5a;line-height:1.7;">If you need to find a new home for your dog — rather than adopt — visit our <a href="/rehome-a-dog/" style="color:#1f4ea3;font-weight:500;">rehoming hub</a>. Each of these rescues also offers private, judgement-free rehoming guidance for owners who need it.</p>
+  <p style="color:#5a5a5a;line-height:1.7;">If you need to find a new home for your dog — rather than adopt — use our <a href="/rehome-a-dog/" style="color:#1f4ea3;font-weight:500;">rehoming hub</a> to find the most relevant partner pathway.</p>
 </section>
+</main>
 
 <footer>
   <p>Dog Rescue SA is a guidance platform connecting people with trusted South African rescue organisations.</p>

@@ -4,7 +4,7 @@
 **Pages:** dogrescuesa.pages.dev  
 **Redirect:** dogrescuenetwork.co.za → dogrescuesa.co.za  
 
-A static HTML directory connecting South Africans with trusted breed-specific rescue organisations. Find dogs for adoption by province and breed, or get free rehoming guidance.
+A static, rehome-first signpost connecting South Africans with current rescue-network pathways. It does not host dogs, collect enquiries, process applications, or promise partner capacity.
 
 ## What this is
 
@@ -23,14 +23,16 @@ A **signpost directory** — not a rescue, not a classifieds site, not a marketp
 ## Structure
 
 ```
-public/           ← Cloudflare Pages deploy root
-├── index.html
-├── adopt/        ← Province adoption pages
-├── surrender/    ← Rehoming guidance → partner rescues
-├── breeds/       ← Breed-specific rescue links
+public/                    ← Cloudflare Pages deploy root
+├── index.html             ← rehome-first homepage
+├── rehome-a-dog/          ← rehoming pathways
+├── find-a-rescue/         ← adoption signposts
+├── breeds/                ← current breed coverage
+├── private-rehoming-risks/
 ├── about/
-├── faq/
-└── lost/         ← → lostdogs.co.za
+├── lost/                  ← Lost Dogs SA signpost
+├── robots.txt
+└── sitemap.xml
 ```
 
 ## Build workflow
