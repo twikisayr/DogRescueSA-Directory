@@ -38,9 +38,11 @@ public/                    ← Cloudflare Pages deploy root
 ## Build workflow
 
 1. Write spec → review → approve (Hermes)
-2. Build on feature branch (Hermes or Codex)
-3. PR review against BUILD_SPEC.md
-4. Merge to `main` → auto-deploy via Cloudflare Pages
+2. Build and verify locally on a feature branch
+3. Merge or commit the approved files to `main`
+4. Push `main` to GitHub for source history
+5. Deploy `public/` directly to the confirmed `dogrescuesa` Cloudflare Pages project in the `Info@sayr.co.za` account
+6. Verify the live custom domain; this project is not Git-connected
 
 See `BUILD_SPEC.md` for full specification.
 See `CODEX_GUARDRAILS.md` for Codex usage rules.
