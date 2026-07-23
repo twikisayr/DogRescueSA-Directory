@@ -4,6 +4,14 @@
 
 Dog Rescue SA is a static HTML guidance directory deployed from `public/` to the direct-upload Cloudflare Pages project `dogrescuesa`. The site is rehome-first, directory-second, and routes visitors to independent rescue organisations.
 
+### Source control and deployment ownership
+
+- GitHub repository `twikisayr/DogRescueSA-Directory` is the source-control and review system.
+- Cloudflare Pages project `dogrescuesa` is the current Direct Upload production project; it is not treated as a GitHub-integrated Pages project.
+- Production deployments remain controlled and manual. A Git push alone does not publish production.
+- After review, a non-production Wrangler branch deployment may be used for preview testing when suitable Cloudflare Pages write authentication is available. Preview deployment must not change `dogrescuesa.co.za`.
+- Do not create or migrate to a new Git-integrated Cloudflare Pages project without separate approval.
+
 ## Styling policy
 
 - A local shared stylesheet at `/assets/css/site.css` is permitted and preferred for site-wide consistency.
